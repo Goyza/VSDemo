@@ -1,0 +1,13 @@
+﻿@model IEnumerable<EmployeeRegister.Models.Employee>
+
+
+<h2>SORT by SALARY</h2>
+
+<h2 id="demo">hmmm</h2>
+
+<script type="text/javascript">
+    var _obj = '@Html.Raw(Json.Encode(Model))';
+    _obj = JSON.parse(_obj);
+   document.getElementById("demo").innerHTML = _obj.id;
+
+</script>
